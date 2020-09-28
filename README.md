@@ -6,6 +6,8 @@
 
 EDI Onboarding Guides for Informative usage.
 
+<a href="images/ediSpec.png">EDI Spec Image</a>
+
 ## Abstract
 
 Informative guides to usage of X12/EDIFACT

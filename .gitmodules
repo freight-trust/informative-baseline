@@ -1,0 +1,3 @@
+[submodule "edi-onboarding"]
+	path = edi-onboarding
+	url = https://github.com/freight-trust/edi-onboarding

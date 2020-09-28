@@ -1,0 +1,2079 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "UNH": {
+      "type": "object",
+      "properties": {
+        "MessageReferenceNumber_01": {
+          "type": "string"
+        },
+        "MessageIdentifier_02": {
+          "type": "object",
+          "properties": {
+            "MessageType_01": {
+              "type": "string"
+            },
+            "MessageVersionNumber_02": {
+              "type": "string"
+            },
+            "MessageReleaseNumber_03": {
+              "type": "string"
+            },
+            "ControllingAgencyCoded_04": {
+              "type": "string"
+            },
+            "AssociationAssignedCode_05": {
+              "type": "null"
+            },
+            "CodelistDirectoryVersionNumber_06": {
+              "type": "null"
+            },
+            "MessageTypeSubfunctionIdentification_07": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "MessageType_01",
+            "MessageVersionNumber_02",
+            "MessageReleaseNumber_03",
+            "ControllingAgencyCoded_04",
+            "AssociationAssignedCode_05",
+            "CodelistDirectoryVersionNumber_06",
+            "MessageTypeSubfunctionIdentification_07"
+          ]
+        },
+        "CommonAccessReference_03": {
+          "type": "null"
+        },
+        "StatusoftheTransfer_04": {
+          "type": "null"
+        },
+        "MessageSubsetIdentification_05": {
+          "type": "null"
+        },
+        "MessageImplementationGuidelineIdentification_06": {
+          "type": "null"
+        },
+        "ScenarioIdentification_07": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "MessageReferenceNumber_01",
+        "MessageIdentifier_02",
+        "CommonAccessReference_03",
+        "StatusoftheTransfer_04",
+        "MessageSubsetIdentification_05",
+        "MessageImplementationGuidelineIdentification_06",
+        "ScenarioIdentification_07"
+      ]
+    },
+    "BGM": {
+      "type": "object",
+      "properties": {
+        "DOCUMENTMESSAGENAME_01": {
+          "type": "object",
+          "properties": {
+            "Documentmessagenamecoded_01": {
+              "type": "string"
+            },
+            "Codelistqualifier_02": {
+              "type": "null"
+            },
+            "Codelistresponsibleagencycoded_03": {
+              "type": "null"
+            },
+            "Documentmessagename_04": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "Documentmessagenamecoded_01",
+            "Codelistqualifier_02",
+            "Codelistresponsibleagencycoded_03",
+            "Documentmessagename_04"
+          ]
+        },
+        "Documentmessagenumber_02": {
+          "type": "string"
+        },
+        "Messagefunctioncoded_03": {
+          "type": "string"
+        },
+        "Responsetypecoded_04": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "DOCUMENTMESSAGENAME_01",
+        "Documentmessagenumber_02",
+        "Messagefunctioncoded_03",
+        "Responsetypecoded_04"
+      ]
+    },
+    "DTM": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "DATETIMEPERIOD_01": {
+              "type": "object",
+              "properties": {
+                "Datetimeperiodqualifier_01": {
+                  "type": "string"
+                },
+                "Datetimeperiod_02": {
+                  "type": "string"
+                },
+                "Datetimeperiodformatqualifier_03": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Datetimeperiodqualifier_01",
+                "Datetimeperiod_02",
+                "Datetimeperiodformatqualifier_03"
+              ]
+            }
+          },
+          "required": [
+            "DATETIMEPERIOD_01"
+          ]
+        }
+      ]
+    },
+    "PAI": {
+      "type": "object",
+      "properties": {
+        "PAYMENTINSTRUCTIONDETAILS_01": {
+          "type": "object",
+          "properties": {
+            "Paymentconditionscoded_01": {
+              "type": "null"
+            },
+            "Paymentguaranteecoded_02": {
+              "type": "null"
+            },
+            "Paymentmeanscoded_03": {
+              "type": "string"
+            },
+            "Codelistqualifier_04": {
+              "type": "null"
+            },
+            "Codelistresponsibleagencycoded_05": {
+              "type": "null"
+            },
+            "Paymentchannelcoded_06": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "Paymentconditionscoded_01",
+            "Paymentguaranteecoded_02",
+            "Paymentmeanscoded_03",
+            "Codelistqualifier_04",
+            "Codelistresponsibleagencycoded_05",
+            "Paymentchannelcoded_06"
+          ]
+        }
+      },
+      "required": [
+        "PAYMENTINSTRUCTIONDETAILS_01"
+      ]
+    },
+    "ALI": {
+      "type": "null"
+    },
+    "IMD": {
+      "type": "null"
+    },
+    "FTX": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "Textsubjectqualifier_01": {
+              "type": "string"
+            },
+            "Textfunctioncoded_02": {
+              "type": "string"
+            },
+            "TEXTREFERENCE_03": {
+              "type": "object",
+              "properties": {
+                "Freetextcoded_01": {
+                  "type": "string"
+                },
+                "Codelistqualifier_02": {
+                  "type": "null"
+                },
+                "Codelistresponsibleagencycoded_03": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "Freetextcoded_01",
+                "Codelistqualifier_02",
+                "Codelistresponsibleagencycoded_03"
+              ]
+            },
+            "TEXTLITERAL_04": {
+              "type": "null"
+            },
+            "Languagecoded_05": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "Textsubjectqualifier_01",
+            "Textfunctioncoded_02",
+            "TEXTREFERENCE_03",
+            "TEXTLITERAL_04",
+            "Languagecoded_05"
+          ]
+        }
+      ]
+    },
+    "RFFLoop": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "RFF": {
+              "type": "object",
+              "properties": {
+                "REFERENCE_01": {
+                  "type": "object",
+                  "properties": {
+                    "Referencequalifier_01": {
+                      "type": "string"
+                    },
+                    "Referencenumber_02": {
+                      "type": "string"
+                    },
+                    "Linenumber_03": {
+                      "type": "null"
+                    },
+                    "Referenceversionnumber_04": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Referencequalifier_01",
+                    "Referencenumber_02",
+                    "Linenumber_03",
+                    "Referenceversionnumber_04"
+                  ]
+                }
+              },
+              "required": [
+                "REFERENCE_01"
+              ]
+            },
+            "DTM": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "DATETIMEPERIOD_01": {
+                      "type": "object",
+                      "properties": {
+                        "Datetimeperiodqualifier_01": {
+                          "type": "string"
+                        },
+                        "Datetimeperiod_02": {
+                          "type": "string"
+                        },
+                        "Datetimeperiodformatqualifier_03": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "Datetimeperiodqualifier_01",
+                        "Datetimeperiod_02",
+                        "Datetimeperiodformatqualifier_03"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "DATETIMEPERIOD_01"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "RFF",
+            "DTM"
+          ]
+        }
+      ]
+    },
+    "NADLoop": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "NAD": {
+              "type": "object",
+              "properties": {
+                "Partyqualifier_01": {
+                  "type": "string"
+                },
+                "PARTYIDENTIFICATIONDETAILS_02": {
+                  "type": "object",
+                  "properties": {
+                    "Partyididentification_01": {
+                      "type": "string"
+                    },
+                    "Codelistqualifier_02": {
+                      "type": "null"
+                    },
+                    "Codelistresponsibleagencycoded_03": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Partyididentification_01",
+                    "Codelistqualifier_02",
+                    "Codelistresponsibleagencycoded_03"
+                  ]
+                },
+                "NAMEANDADDRESS_03": {
+                  "type": "null"
+                },
+                "PARTYNAME_04": {
+                  "type": "null"
+                },
+                "STREET_05": {
+                  "type": "null"
+                },
+                "Cityname_06": {
+                  "type": "null"
+                },
+                "Countrysubentityidentification_07": {
+                  "type": "null"
+                },
+                "Postcodeidentification_08": {
+                  "type": "null"
+                },
+                "Countrycoded_09": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "Partyqualifier_01",
+                "PARTYIDENTIFICATIONDETAILS_02",
+                "NAMEANDADDRESS_03",
+                "PARTYNAME_04",
+                "STREET_05",
+                "Cityname_06",
+                "Countrysubentityidentification_07",
+                "Postcodeidentification_08",
+                "Countrycoded_09"
+              ]
+            },
+            "LOC": {
+              "type": "null"
+            },
+            "FII": {
+              "type": "null"
+            },
+            "RFFLoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "RFF": {
+                      "type": "object",
+                      "properties": {
+                        "REFERENCE_01": {
+                          "type": "object",
+                          "properties": {
+                            "Referencequalifier_01": {
+                              "type": "string"
+                            },
+                            "Referencenumber_02": {
+                              "type": "string"
+                            },
+                            "Linenumber_03": {
+                              "type": "null"
+                            },
+                            "Referenceversionnumber_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Referencequalifier_01",
+                            "Referencenumber_02",
+                            "Linenumber_03",
+                            "Referenceversionnumber_04"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "REFERENCE_01"
+                      ]
+                    },
+                    "DTM": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "RFF",
+                    "DTM"
+                  ]
+                }
+              ]
+            },
+            "DOCLoop": {
+              "type": "null"
+            },
+            "CTALoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "CTA": {
+                      "type": "object",
+                      "properties": {
+                        "Contactfunctioncoded_01": {
+                          "type": "string"
+                        },
+                        "DEPARTMENTOREMPLOYEEDETAILS_02": {
+                          "type": "object",
+                          "properties": {
+                            "Departmentoremployeeidentification_01": {
+                              "type": "null"
+                            },
+                            "Departmentoremployee_02": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Departmentoremployeeidentification_01",
+                            "Departmentoremployee_02"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "Contactfunctioncoded_01",
+                        "DEPARTMENTOREMPLOYEEDETAILS_02"
+                      ]
+                    },
+                    "COM": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "COMMUNICATIONCONTACT_01": {
+                              "type": "object",
+                              "properties": {
+                                "Communicationnumber_01": {
+                                  "type": "string"
+                                },
+                                "Communicationchannelqualifier_02": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "Communicationnumber_01",
+                                "Communicationchannelqualifier_02"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "COMMUNICATIONCONTACT_01"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "CTA",
+                    "COM"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "NAD",
+            "LOC",
+            "FII",
+            "RFFLoop",
+            "DOCLoop",
+            "CTALoop"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "NAD": {
+              "type": "object",
+              "properties": {
+                "Partyqualifier_01": {
+                  "type": "string"
+                },
+                "PARTYIDENTIFICATIONDETAILS_02": {
+                  "type": "object",
+                  "properties": {
+                    "Partyididentification_01": {
+                      "type": "string"
+                    },
+                    "Codelistqualifier_02": {
+                      "type": "null"
+                    },
+                    "Codelistresponsibleagencycoded_03": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Partyididentification_01",
+                    "Codelistqualifier_02",
+                    "Codelistresponsibleagencycoded_03"
+                  ]
+                },
+                "NAMEANDADDRESS_03": {
+                  "type": "null"
+                },
+                "PARTYNAME_04": {
+                  "type": "null"
+                },
+                "STREET_05": {
+                  "type": "null"
+                },
+                "Cityname_06": {
+                  "type": "null"
+                },
+                "Countrysubentityidentification_07": {
+                  "type": "null"
+                },
+                "Postcodeidentification_08": {
+                  "type": "null"
+                },
+                "Countrycoded_09": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "Partyqualifier_01",
+                "PARTYIDENTIFICATIONDETAILS_02",
+                "NAMEANDADDRESS_03",
+                "PARTYNAME_04",
+                "STREET_05",
+                "Cityname_06",
+                "Countrysubentityidentification_07",
+                "Postcodeidentification_08",
+                "Countrycoded_09"
+              ]
+            },
+            "LOC": {
+              "type": "null"
+            },
+            "FII": {
+              "type": "null"
+            },
+            "RFFLoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "RFF": {
+                      "type": "object",
+                      "properties": {
+                        "REFERENCE_01": {
+                          "type": "object",
+                          "properties": {
+                            "Referencequalifier_01": {
+                              "type": "string"
+                            },
+                            "Referencenumber_02": {
+                              "type": "string"
+                            },
+                            "Linenumber_03": {
+                              "type": "null"
+                            },
+                            "Referenceversionnumber_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Referencequalifier_01",
+                            "Referencenumber_02",
+                            "Linenumber_03",
+                            "Referenceversionnumber_04"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "REFERENCE_01"
+                      ]
+                    },
+                    "DTM": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "RFF",
+                    "DTM"
+                  ]
+                }
+              ]
+            },
+            "DOCLoop": {
+              "type": "null"
+            },
+            "CTALoop": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "NAD",
+            "LOC",
+            "FII",
+            "RFFLoop",
+            "DOCLoop",
+            "CTALoop"
+          ]
+        }
+      ]
+    },
+    "TAXLoop": {
+      "type": "null"
+    },
+    "CUXLoop": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "CUX": {
+              "type": "object",
+              "properties": {
+                "CURRENCYDETAILS_01": {
+                  "type": "object",
+                  "properties": {
+                    "Currencydetailsqualifier_01": {
+                      "type": "string"
+                    },
+                    "Currencycoded_02": {
+                      "type": "string"
+                    },
+                    "Currencyqualifier_03": {
+                      "type": "string"
+                    },
+                    "Currencyratebase_04": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Currencydetailsqualifier_01",
+                    "Currencycoded_02",
+                    "Currencyqualifier_03",
+                    "Currencyratebase_04"
+                  ]
+                },
+                "CURRENCYDETAILS_02": {
+                  "type": "object",
+                  "properties": {
+                    "Currencydetailsqualifier_01": {
+                      "type": "string"
+                    },
+                    "Currencycoded_02": {
+                      "type": "string"
+                    },
+                    "Currencyqualifier_03": {
+                      "type": "string"
+                    },
+                    "Currencyratebase_04": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Currencydetailsqualifier_01",
+                    "Currencycoded_02",
+                    "Currencyqualifier_03",
+                    "Currencyratebase_04"
+                  ]
+                },
+                "Rateofexchange_03": {
+                  "type": "string"
+                },
+                "Currencymarketexchangecoded_04": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "CURRENCYDETAILS_01",
+                "CURRENCYDETAILS_02",
+                "Rateofexchange_03",
+                "Currencymarketexchangecoded_04"
+              ]
+            },
+            "PCD": {
+              "type": "null"
+            },
+            "DTM": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "DATETIMEPERIOD_01": {
+                      "type": "object",
+                      "properties": {
+                        "Datetimeperiodqualifier_01": {
+                          "type": "string"
+                        },
+                        "Datetimeperiod_02": {
+                          "type": "string"
+                        },
+                        "Datetimeperiodformatqualifier_03": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "Datetimeperiodqualifier_01",
+                        "Datetimeperiod_02",
+                        "Datetimeperiodformatqualifier_03"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "DATETIMEPERIOD_01"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "CUX",
+            "PCD",
+            "DTM"
+          ]
+        }
+      ]
+    },
+    "PATLoop": {
+      "type": "null"
+    },
+    "TDTLoop": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "TDT": {
+              "type": "object",
+              "properties": {
+                "Transportstagequalifier_01": {
+                  "type": "string"
+                },
+                "Conveyancereferencenumber_02": {
+                  "type": "null"
+                },
+                "MODEOFTRANSPORT_03": {
+                  "type": "object",
+                  "properties": {
+                    "Modeoftransportcoded_01": {
+                      "type": "string"
+                    },
+                    "Modeoftransport_02": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Modeoftransportcoded_01",
+                    "Modeoftransport_02"
+                  ]
+                },
+                "TRANSPORTMEANS_04": {
+                  "type": "object",
+                  "properties": {
+                    "Typeofmeansoftransportidentification_01": {
+                      "type": "string"
+                    },
+                    "Typeofmeansoftransport_02": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Typeofmeansoftransportidentification_01",
+                    "Typeofmeansoftransport_02"
+                  ]
+                },
+                "CARRIER_05": {
+                  "type": "null"
+                },
+                "Transitdirectioncoded_06": {
+                  "type": "null"
+                },
+                "EXCESSTRANSPORTATIONINFORMATION_07": {
+                  "type": "null"
+                },
+                "TRANSPORTIDENTIFICATION_08": {
+                  "type": "null"
+                },
+                "Transportownershipcoded_09": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "Transportstagequalifier_01",
+                "Conveyancereferencenumber_02",
+                "MODEOFTRANSPORT_03",
+                "TRANSPORTMEANS_04",
+                "CARRIER_05",
+                "Transitdirectioncoded_06",
+                "EXCESSTRANSPORTATIONINFORMATION_07",
+                "TRANSPORTIDENTIFICATION_08",
+                "Transportownershipcoded_09"
+              ]
+            },
+            "LOCLoop": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "TDT",
+            "LOCLoop"
+          ]
+        }
+      ]
+    },
+    "TODLoop": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "TOD": {
+              "type": "object",
+              "properties": {
+                "Termsofdeliveryortransportfunctioncoded_01": {
+                  "type": "string"
+                },
+                "Transportchargesmethodofpaymentcoded_02": {
+                  "type": "null"
+                },
+                "TERMSOFDELIVERYORTRANSPORT_03": {
+                  "type": "object",
+                  "properties": {
+                    "Termsofdeliveryortransportcoded_01": {
+                      "type": "string"
+                    },
+                    "Codelistqualifier_02": {
+                      "type": "string"
+                    },
+                    "Codelistresponsibleagencycoded_03": {
+                      "type": "string"
+                    },
+                    "Termsofdeliveryortransport_04": {
+                      "type": "null"
+                    },
+                    "Termsofdeliveryortransport_05": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Termsofdeliveryortransportcoded_01",
+                    "Codelistqualifier_02",
+                    "Codelistresponsibleagencycoded_03",
+                    "Termsofdeliveryortransport_04",
+                    "Termsofdeliveryortransport_05"
+                  ]
+                }
+              },
+              "required": [
+                "Termsofdeliveryortransportfunctioncoded_01",
+                "Transportchargesmethodofpaymentcoded_02",
+                "TERMSOFDELIVERYORTRANSPORT_03"
+              ]
+            },
+            "LOC": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Placelocationqualifier_01": {
+                      "type": "string"
+                    },
+                    "LOCATIONIDENTIFICATION_02": {
+                      "type": "object",
+                      "properties": {
+                        "Placelocationidentification_01": {
+                          "type": "string"
+                        },
+                        "Codelistqualifier_02": {
+                          "type": "null"
+                        },
+                        "Codelistresponsibleagencycoded_03": {
+                          "type": "null"
+                        },
+                        "Placelocation_04": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Placelocationidentification_01",
+                        "Codelistqualifier_02",
+                        "Codelistresponsibleagencycoded_03",
+                        "Placelocation_04"
+                      ]
+                    },
+                    "RELATEDLOCATIONONEIDENTIFICATION_03": {
+                      "type": "null"
+                    },
+                    "RELATEDLOCATIONTWOIDENTIFICATION_04": {
+                      "type": "null"
+                    },
+                    "Relationcoded_05": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Placelocationqualifier_01",
+                    "LOCATIONIDENTIFICATION_02",
+                    "RELATEDLOCATIONONEIDENTIFICATION_03",
+                    "RELATEDLOCATIONTWOIDENTIFICATION_04",
+                    "Relationcoded_05"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "TOD",
+            "LOC"
+          ]
+        }
+      ]
+    },
+    "PACLoop": {
+      "type": "null"
+    },
+    "EQDLoop": {
+      "type": "null"
+    },
+    "SCCLoop": {
+      "type": "null"
+    },
+    "APRLoop": {
+      "type": "null"
+    },
+    "ALCLoop": {
+      "type": "null"
+    },
+    "RCSLoop": {
+      "type": "null"
+    },
+    "LINLoop": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "LIN": {
+              "type": "object",
+              "properties": {
+                "Lineitemnumber_01": {
+                  "type": "string"
+                },
+                "Actionrequestnotificationcoded_02": {
+                  "type": "null"
+                },
+                "ITEMNUMBERIDENTIFICATION_03": {
+                  "type": "object",
+                  "properties": {
+                    "Itemnumber_01": {
+                      "type": "string"
+                    },
+                    "Itemnumbertypecoded_02": {
+                      "type": "string"
+                    },
+                    "Codelistqualifier_03": {
+                      "type": "null"
+                    },
+                    "Codelistresponsibleagencycoded_04": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Itemnumber_01",
+                    "Itemnumbertypecoded_02",
+                    "Codelistqualifier_03",
+                    "Codelistresponsibleagencycoded_04"
+                  ]
+                },
+                "SUBLINEINFORMATION_04": {
+                  "type": "null"
+                },
+                "Configurationlevel_05": {
+                  "type": "null"
+                },
+                "Configurationcoded_06": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "Lineitemnumber_01",
+                "Actionrequestnotificationcoded_02",
+                "ITEMNUMBERIDENTIFICATION_03",
+                "SUBLINEINFORMATION_04",
+                "Configurationlevel_05",
+                "Configurationcoded_06"
+              ]
+            },
+            "PIA": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Productidfunctionqualifier_01": {
+                      "type": "string"
+                    },
+                    "ITEMNUMBERIDENTIFICATION_02": {
+                      "type": "object",
+                      "properties": {
+                        "Itemnumber_01": {
+                          "type": "string"
+                        },
+                        "Itemnumbertypecoded_02": {
+                          "type": "string"
+                        },
+                        "Codelistqualifier_03": {
+                          "type": "null"
+                        },
+                        "Codelistresponsibleagencycoded_04": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Itemnumber_01",
+                        "Itemnumbertypecoded_02",
+                        "Codelistqualifier_03",
+                        "Codelistresponsibleagencycoded_04"
+                      ]
+                    },
+                    "ITEMNUMBERIDENTIFICATION_03": {
+                      "type": "null"
+                    },
+                    "ITEMNUMBERIDENTIFICATION_04": {
+                      "type": "null"
+                    },
+                    "ITEMNUMBERIDENTIFICATION_05": {
+                      "type": "null"
+                    },
+                    "ITEMNUMBERIDENTIFICATION_06": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Productidfunctionqualifier_01",
+                    "ITEMNUMBERIDENTIFICATION_02",
+                    "ITEMNUMBERIDENTIFICATION_03",
+                    "ITEMNUMBERIDENTIFICATION_04",
+                    "ITEMNUMBERIDENTIFICATION_05",
+                    "ITEMNUMBERIDENTIFICATION_06"
+                  ]
+                }
+              ]
+            },
+            "IMD": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Itemdescriptiontypecoded_01": {
+                      "type": "string"
+                    },
+                    "Itemcharacteristiccoded_02": {
+                      "type": "null"
+                    },
+                    "ITEMDESCRIPTION_03": {
+                      "type": "object",
+                      "properties": {
+                        "Itemdescriptionidentification_01": {
+                          "type": "string"
+                        },
+                        "Codelistqualifier_02": {
+                          "type": "null"
+                        },
+                        "Codelistresponsibleagencycoded_03": {
+                          "type": "string"
+                        },
+                        "Itemdescription_04": {
+                          "type": "null"
+                        },
+                        "Itemdescription_05": {
+                          "type": "null"
+                        },
+                        "Languagecoded_06": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Itemdescriptionidentification_01",
+                        "Codelistqualifier_02",
+                        "Codelistresponsibleagencycoded_03",
+                        "Itemdescription_04",
+                        "Itemdescription_05",
+                        "Languagecoded_06"
+                      ]
+                    },
+                    "Surfacelayerindicatorcoded_04": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "Itemdescriptiontypecoded_01",
+                    "Itemcharacteristiccoded_02",
+                    "ITEMDESCRIPTION_03",
+                    "Surfacelayerindicatorcoded_04"
+                  ]
+                }
+              ]
+            },
+            "MEA": {
+              "type": "null"
+            },
+            "QTY": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "QUANTITYDETAILS_01": {
+                      "type": "object",
+                      "properties": {
+                        "Quantityqualifier_01": {
+                          "type": "string"
+                        },
+                        "Quantity_02": {
+                          "type": "string"
+                        },
+                        "Measureunitqualifier_03": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Quantityqualifier_01",
+                        "Quantity_02",
+                        "Measureunitqualifier_03"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "QUANTITYDETAILS_01"
+                  ]
+                }
+              ]
+            },
+            "PCD": {
+              "type": "null"
+            },
+            "ALI": {
+              "type": "null"
+            },
+            "DTM": {
+              "type": "null"
+            },
+            "MOA": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "MONETARYAMOUNT_01": {
+                      "type": "object",
+                      "properties": {
+                        "Monetaryamounttypequalifier_01": {
+                          "type": "string"
+                        },
+                        "Monetaryamount_02": {
+                          "type": "string"
+                        },
+                        "Currencycoded_03": {
+                          "type": "null"
+                        },
+                        "Currencyqualifier_04": {
+                          "type": "null"
+                        },
+                        "Statuscoded_05": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Monetaryamounttypequalifier_01",
+                        "Monetaryamount_02",
+                        "Currencycoded_03",
+                        "Currencyqualifier_04",
+                        "Statuscoded_05"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "MONETARYAMOUNT_01"
+                  ]
+                }
+              ]
+            },
+            "GIN": {
+              "type": "null"
+            },
+            "GIR": {
+              "type": "null"
+            },
+            "QVR": {
+              "type": "null"
+            },
+            "DOC": {
+              "type": "null"
+            },
+            "PAI": {
+              "type": "null"
+            },
+            "FTX": {
+              "type": "null"
+            },
+            "CCILoop": {
+              "type": "null"
+            },
+            "PATLoop": {
+              "type": "null"
+            },
+            "PRILoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "PRI": {
+                      "type": "object",
+                      "properties": {
+                        "PRICEINFORMATION_01": {
+                          "type": "object",
+                          "properties": {
+                            "Pricequalifier_01": {
+                              "type": "string"
+                            },
+                            "Price_02": {
+                              "type": "string"
+                            },
+                            "Pricetypecoded_03": {
+                              "type": "string"
+                            },
+                            "Pricetypequalifier_04": {
+                              "type": "string"
+                            },
+                            "Unitpricebasis_05": {
+                              "type": "string"
+                            },
+                            "Measureunitqualifier_06": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "Pricequalifier_01",
+                            "Price_02",
+                            "Pricetypecoded_03",
+                            "Pricetypequalifier_04",
+                            "Unitpricebasis_05",
+                            "Measureunitqualifier_06"
+                          ]
+                        },
+                        "Sublinepricechangecoded_02": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "PRICEINFORMATION_01",
+                        "Sublinepricechangecoded_02"
+                      ]
+                    },
+                    "CUX": {
+                      "type": "null"
+                    },
+                    "APR": {
+                      "type": "null"
+                    },
+                    "RNG": {
+                      "type": "null"
+                    },
+                    "DTM": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "PRI",
+                    "CUX",
+                    "APR",
+                    "RNG",
+                    "DTM"
+                  ]
+                }
+              ]
+            },
+            "RFFLoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "RFF": {
+                      "type": "object",
+                      "properties": {
+                        "REFERENCE_01": {
+                          "type": "object",
+                          "properties": {
+                            "Referencequalifier_01": {
+                              "type": "string"
+                            },
+                            "Referencenumber_02": {
+                              "type": "string"
+                            },
+                            "Linenumber_03": {
+                              "type": "null"
+                            },
+                            "Referenceversionnumber_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Referencequalifier_01",
+                            "Referencenumber_02",
+                            "Linenumber_03",
+                            "Referenceversionnumber_04"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "REFERENCE_01"
+                      ]
+                    },
+                    "DTM": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "DATETIMEPERIOD_01": {
+                              "type": "object",
+                              "properties": {
+                                "Datetimeperiodqualifier_01": {
+                                  "type": "string"
+                                },
+                                "Datetimeperiod_02": {
+                                  "type": "string"
+                                },
+                                "Datetimeperiodformatqualifier_03": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "Datetimeperiodqualifier_01",
+                                "Datetimeperiod_02",
+                                "Datetimeperiodformatqualifier_03"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "DATETIMEPERIOD_01"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "RFF",
+                    "DTM"
+                  ]
+                }
+              ]
+            },
+            "PACLoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "PAC": {
+                      "type": "object",
+                      "properties": {
+                        "Numberofpackages_01": {
+                          "type": "string"
+                        },
+                        "PACKAGINGDETAILS_02": {
+                          "type": "object",
+                          "properties": {
+                            "Packaginglevelcoded_01": {
+                              "type": "null"
+                            },
+                            "Packagingrelatedinformationcoded_02": {
+                              "type": "string"
+                            },
+                            "Packagingtermsandconditionscoded_03": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Packaginglevelcoded_01",
+                            "Packagingrelatedinformationcoded_02",
+                            "Packagingtermsandconditionscoded_03"
+                          ]
+                        },
+                        "PACKAGETYPE_03": {
+                          "type": "object",
+                          "properties": {
+                            "Typeofpackagesidentification_01": {
+                              "type": "string"
+                            },
+                            "Codelistqualifier_02": {
+                              "type": "null"
+                            },
+                            "Codelistresponsibleagencycoded_03": {
+                              "type": "null"
+                            },
+                            "Typeofpackages_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Typeofpackagesidentification_01",
+                            "Codelistqualifier_02",
+                            "Codelistresponsibleagencycoded_03",
+                            "Typeofpackages_04"
+                          ]
+                        },
+                        "PACKAGETYPEIDENTIFICATION_04": {
+                          "type": "null"
+                        },
+                        "RETURNABLEPACKAGEDETAILS_05": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Numberofpackages_01",
+                        "PACKAGINGDETAILS_02",
+                        "PACKAGETYPE_03",
+                        "PACKAGETYPEIDENTIFICATION_04",
+                        "RETURNABLEPACKAGEDETAILS_05"
+                      ]
+                    },
+                    "MEA": {
+                      "type": "null"
+                    },
+                    "QTY": {
+                      "type": "null"
+                    },
+                    "DTM": {
+                      "type": "null"
+                    },
+                    "RFFLoop": {
+                      "type": "null"
+                    },
+                    "PCILoop": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "PCI": {
+                              "type": "object",
+                              "properties": {
+                                "Markinginstructionscoded_01": {
+                                  "type": "string"
+                                },
+                                "MARKSLABELS_02": {
+                                  "type": "null"
+                                },
+                                "Containerpackagestatuscoded_03": {
+                                  "type": "null"
+                                },
+                                "TYPEOFMARKING_04": {
+                                  "type": "null"
+                                }
+                              },
+                              "required": [
+                                "Markinginstructionscoded_01",
+                                "MARKSLABELS_02",
+                                "Containerpackagestatuscoded_03",
+                                "TYPEOFMARKING_04"
+                              ]
+                            },
+                            "RFF": {
+                              "type": "null"
+                            },
+                            "DTM": {
+                              "type": "null"
+                            },
+                            "GIN": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "PCI",
+                            "RFF",
+                            "DTM",
+                            "GIN"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "PAC",
+                    "MEA",
+                    "QTY",
+                    "DTM",
+                    "RFFLoop",
+                    "PCILoop"
+                  ]
+                }
+              ]
+            },
+            "LOCLoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "LOC": {
+                      "type": "object",
+                      "properties": {
+                        "Placelocationqualifier_01": {
+                          "type": "string"
+                        },
+                        "LOCATIONIDENTIFICATION_02": {
+                          "type": "object",
+                          "properties": {
+                            "Placelocationidentification_01": {
+                              "type": "string"
+                            },
+                            "Codelistqualifier_02": {
+                              "type": "null"
+                            },
+                            "Codelistresponsibleagencycoded_03": {
+                              "type": "string"
+                            },
+                            "Placelocation_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Placelocationidentification_01",
+                            "Codelistqualifier_02",
+                            "Codelistresponsibleagencycoded_03",
+                            "Placelocation_04"
+                          ]
+                        },
+                        "RELATEDLOCATIONONEIDENTIFICATION_03": {
+                          "type": "null"
+                        },
+                        "RELATEDLOCATIONTWOIDENTIFICATION_04": {
+                          "type": "null"
+                        },
+                        "Relationcoded_05": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Placelocationqualifier_01",
+                        "LOCATIONIDENTIFICATION_02",
+                        "RELATEDLOCATIONONEIDENTIFICATION_03",
+                        "RELATEDLOCATIONTWOIDENTIFICATION_04",
+                        "Relationcoded_05"
+                      ]
+                    },
+                    "QTY": {
+                      "type": "object",
+                      "properties": {
+                        "QUANTITYDETAILS_01": {
+                          "type": "object",
+                          "properties": {
+                            "Quantityqualifier_01": {
+                              "type": "string"
+                            },
+                            "Quantity_02": {
+                              "type": "string"
+                            },
+                            "Measureunitqualifier_03": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Quantityqualifier_01",
+                            "Quantity_02",
+                            "Measureunitqualifier_03"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "QUANTITYDETAILS_01"
+                      ]
+                    },
+                    "DTM": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "DATETIMEPERIOD_01": {
+                              "type": "object",
+                              "properties": {
+                                "Datetimeperiodqualifier_01": {
+                                  "type": "string"
+                                },
+                                "Datetimeperiod_02": {
+                                  "type": "string"
+                                },
+                                "Datetimeperiodformatqualifier_03": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "Datetimeperiodqualifier_01",
+                                "Datetimeperiod_02",
+                                "Datetimeperiodformatqualifier_03"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "DATETIMEPERIOD_01"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "LOC",
+                    "QTY",
+                    "DTM"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "LOC": {
+                      "type": "object",
+                      "properties": {
+                        "Placelocationqualifier_01": {
+                          "type": "string"
+                        },
+                        "LOCATIONIDENTIFICATION_02": {
+                          "type": "object",
+                          "properties": {
+                            "Placelocationidentification_01": {
+                              "type": "string"
+                            },
+                            "Codelistqualifier_02": {
+                              "type": "null"
+                            },
+                            "Codelistresponsibleagencycoded_03": {
+                              "type": "string"
+                            },
+                            "Placelocation_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Placelocationidentification_01",
+                            "Codelistqualifier_02",
+                            "Codelistresponsibleagencycoded_03",
+                            "Placelocation_04"
+                          ]
+                        },
+                        "RELATEDLOCATIONONEIDENTIFICATION_03": {
+                          "type": "null"
+                        },
+                        "RELATEDLOCATIONTWOIDENTIFICATION_04": {
+                          "type": "null"
+                        },
+                        "Relationcoded_05": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Placelocationqualifier_01",
+                        "LOCATIONIDENTIFICATION_02",
+                        "RELATEDLOCATIONONEIDENTIFICATION_03",
+                        "RELATEDLOCATIONTWOIDENTIFICATION_04",
+                        "Relationcoded_05"
+                      ]
+                    },
+                    "QTY": {
+                      "type": "object",
+                      "properties": {
+                        "QUANTITYDETAILS_01": {
+                          "type": "object",
+                          "properties": {
+                            "Quantityqualifier_01": {
+                              "type": "string"
+                            },
+                            "Quantity_02": {
+                              "type": "string"
+                            },
+                            "Measureunitqualifier_03": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Quantityqualifier_01",
+                            "Quantity_02",
+                            "Measureunitqualifier_03"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "QUANTITYDETAILS_01"
+                      ]
+                    },
+                    "DTM": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "DATETIMEPERIOD_01": {
+                              "type": "object",
+                              "properties": {
+                                "Datetimeperiodqualifier_01": {
+                                  "type": "string"
+                                },
+                                "Datetimeperiod_02": {
+                                  "type": "string"
+                                },
+                                "Datetimeperiodformatqualifier_03": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "Datetimeperiodqualifier_01",
+                                "Datetimeperiod_02",
+                                "Datetimeperiodformatqualifier_03"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "DATETIMEPERIOD_01"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "LOC",
+                    "QTY",
+                    "DTM"
+                  ]
+                }
+              ]
+            },
+            "TAXLoop": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "TAX": {
+                      "type": "object",
+                      "properties": {
+                        "Dutytaxfeefunctionqualifier_01": {
+                          "type": "string"
+                        },
+                        "DUTYTAXFEETYPE_02": {
+                          "type": "object",
+                          "properties": {
+                            "Dutytaxfeetypecoded_01": {
+                              "type": "string"
+                            },
+                            "Codelistqualifier_02": {
+                              "type": "null"
+                            },
+                            "Codelistresponsibleagencycoded_03": {
+                              "type": "null"
+                            },
+                            "Dutytaxfeetype_04": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Dutytaxfeetypecoded_01",
+                            "Codelistqualifier_02",
+                            "Codelistresponsibleagencycoded_03",
+                            "Dutytaxfeetype_04"
+                          ]
+                        },
+                        "DUTYTAXFEEACCOUNTDETAIL_03": {
+                          "type": "null"
+                        },
+                        "Dutytaxfeeassessmentbasis_04": {
+                          "type": "null"
+                        },
+                        "DUTYTAXFEEDETAIL_05": {
+                          "type": "object",
+                          "properties": {
+                            "Dutytaxfeerateidentification_01": {
+                              "type": "null"
+                            },
+                            "Codelistqualifier_02": {
+                              "type": "null"
+                            },
+                            "Codelistresponsibleagencycoded_03": {
+                              "type": "null"
+                            },
+                            "Dutytaxfeerate_04": {
+                              "type": "string"
+                            },
+                            "Dutytaxfeeratebasisidentification_05": {
+                              "type": "null"
+                            },
+                            "Codelistqualifier_06": {
+                              "type": "null"
+                            },
+                            "Codelistresponsibleagencycoded_07": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "Dutytaxfeerateidentification_01",
+                            "Codelistqualifier_02",
+                            "Codelistresponsibleagencycoded_03",
+                            "Dutytaxfeerate_04",
+                            "Dutytaxfeeratebasisidentification_05",
+                            "Codelistqualifier_06",
+                            "Codelistresponsibleagencycoded_07"
+                          ]
+                        },
+                        "Dutytaxfeecategorycoded_06": {
+                          "type": "string"
+                        },
+                        "Partytaxidentificationnumber_07": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "Dutytaxfeefunctionqualifier_01",
+                        "DUTYTAXFEETYPE_02",
+                        "DUTYTAXFEEACCOUNTDETAIL_03",
+                        "Dutytaxfeeassessmentbasis_04",
+                        "DUTYTAXFEEDETAIL_05",
+                        "Dutytaxfeecategorycoded_06",
+                        "Partytaxidentificationnumber_07"
+                      ]
+                    },
+                    "MOA": {
+                      "type": "null"
+                    },
+                    "LOC": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "TAX",
+                    "MOA",
+                    "LOC"
+                  ]
+                }
+              ]
+            },
+            "NADLoop": {
+              "type": "null"
+            },
+            "ALCLoop": {
+              "type": "null"
+            },
+            "TDTLoop": {
+              "type": "null"
+            },
+            "TODLoop": {
+              "type": "null"
+            },
+            "EQDLoop": {
+              "type": "null"
+            },
+            "SCCLoop": {
+              "type": "null"
+            },
+            "RCSLoop": {
+              "type": "null"
+            },
+            "STGLoop": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "LIN",
+            "PIA",
+            "IMD",
+            "MEA",
+            "QTY",
+            "PCD",
+            "ALI",
+            "DTM",
+            "MOA",
+            "GIN",
+            "GIR",
+            "QVR",
+            "DOC",
+            "PAI",
+            "FTX",
+            "CCILoop",
+            "PATLoop",
+            "PRILoop",
+            "RFFLoop",
+            "PACLoop",
+            "LOCLoop",
+            "TAXLoop",
+            "NADLoop",
+            "ALCLoop",
+            "TDTLoop",
+            "TODLoop",
+            "EQDLoop",
+            "SCCLoop",
+            "RCSLoop",
+            "STGLoop"
+          ]
+        }
+      ]
+    },
+    "UNS": {
+      "type": "object",
+      "properties": {
+        "Sectionidentification_01": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Sectionidentification_01"
+      ]
+    },
+    "MOA": {
+      "type": "null"
+    },
+    "CNT": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "CONTROL_01": {
+              "type": "object",
+              "properties": {
+                "Controlqualifier_01": {
+                  "type": "string"
+                },
+                "Controlvalue_02": {
+                  "type": "string"
+                },
+                "Measureunitqualifier_03": {
+                  "type": "null"
+                }
+              },
+              "required": [
+                "Controlqualifier_01",
+                "Controlvalue_02",
+                "Measureunitqualifier_03"
+              ]
+            }
+          },
+          "required": [
+            "CONTROL_01"
+          ]
+        }
+      ]
+    },
+    "ALCLoop2": {
+      "type": "null"
+    },
+    "UNT": {
+      "type": "object",
+      "properties": {
+        "NumberofSegmentsinaMessage_01": {
+          "type": "string"
+        },
+        "MessageReferenceNumber_02": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "NumberofSegmentsinaMessage_01",
+        "MessageReferenceNumber_02"
+      ]
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Version": {
+      "type": "string"
+    },
+    "Format": {
+      "type": "string"
+    },
+    "SplitterProperty": {
+      "type": "null"
+    },
+    "PartsCount": {
+      "type": "integer"
+    },
+    "IsPart": {
+      "type": "boolean"
+    },
+    "SplitPostion": {
+      "type": "integer"
+    },
+    "HasErrors": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "UNH",
+    "BGM",
+    "DTM",
+    "PAI",
+    "ALI",
+    "IMD",
+    "FTX",
+    "RFFLoop",
+    "NADLoop",
+    "TAXLoop",
+    "CUXLoop",
+    "PATLoop",
+    "TDTLoop",
+    "TODLoop",
+    "PACLoop",
+    "EQDLoop",
+    "SCCLoop",
+    "APRLoop",
+    "ALCLoop",
+    "RCSLoop",
+    "LINLoop",
+    "UNS",
+    "MOA",
+    "CNT",
+    "ALCLoop2",
+    "UNT",
+    "Name",
+    "Version",
+    "Format",
+    "SplitterProperty",
+    "PartsCount",
+    "IsPart",
+    "SplitPostion",
+    "HasErrors"
+  ]
+}
